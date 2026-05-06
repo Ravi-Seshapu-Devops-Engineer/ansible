@@ -4,6 +4,6 @@
   tasks:
     - name: installing nginx
       ansible.builditin.package:
-      - name: nginx
-        state: present
+        - name: nginx
+          state: present
 
