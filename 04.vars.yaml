@@ -1,0 +1,11 @@
+- name: local variables
+  hosts: local
+  connection: local
+  vars:
+    user: Ravi
+    course: DEVOPS with AWS
+    Trainer: Joindevops
+  tasks:
+  - name: Print variables
+    ansible.builtin.debug:
+      msg: Course is {{course}} is taken by {{user}} and trained by {{Trainer}}
