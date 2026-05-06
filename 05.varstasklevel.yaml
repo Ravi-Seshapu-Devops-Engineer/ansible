@@ -2,12 +2,11 @@
   hosts: local
   connection: local
   vars:
-  - name: play level variables
     course: DEVOPS with AWS
     user: Ravi
     Trainer: Joindevops
-  - tasks:
-    name: printing task level variables
+  tasks:
+  - name: printing task level variables
     vars: 
       course: Aws
       user: Shankar
