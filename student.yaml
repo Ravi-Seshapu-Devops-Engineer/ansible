@@ -1,0 +1,33 @@
+- students
+  - name: "Ravi"
+    DOB: 23-09-99
+    gender: "male"
+    Addresses
+    - Flat: 103
+      street: "flourmill street"
+      city: "ADT"
+      state: "AP"
+      Type: "Current"
+
+    - Flat: 103
+      street: "flourmill street"
+      city: "ADT"
+      state: "AP"
+      Type: "Permanent"
+
+
+  - name: "Shankar"
+    DOB: 23-09-99
+    gender: "male"
+    Addresses
+    - Flat: 103
+      street: "flourmill street"
+      city: "ADT"
+      state: "AP"
+      Type: "Current"
+
+    - Flat: 103
+      street: "flourmill street"
+      city: "ADT"
+      state: "AP"
+      Type: "Permanent"
