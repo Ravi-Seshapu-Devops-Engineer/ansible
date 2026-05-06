@@ -1,0 +1,9 @@
+- name: calling course file
+  hosts: local
+  connection: local
+  vars_files:
+    coursevars.yaml
+  tasks:
+  - name: calling variables from other file location
+    ansible.builtin.debug:
+      msg: course {{course}} is purchased by {{user}} which is trained by {{Trainer}}
