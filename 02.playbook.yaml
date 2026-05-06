@@ -1,4 +1,4 @@
-- name: "Print hellow world"
+- name: Print hellow world
   hosts: web
   tasks:
   - name: Print hello world
