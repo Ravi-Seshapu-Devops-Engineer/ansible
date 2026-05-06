@@ -1,0 +1,25 @@
+- name: printing Datatypes
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "Devops with AWS" #String
+    DURATION: 140
+    IS_LIVE: true
+    DETAILS:
+      MONTHS: 4
+      TRAINER: "Shiva"
+    TOPICS:
+    - linux
+    - shell
+    - ansible
+  tasks:
+  - name: Print variables
+    ansible.builtin.debug:
+      msg: |
+        program: {{PROGRAM}}
+        Duration: {{DURATION}}
+        Islive?: {{IS_LIVE}}
+        Details: {{DETAILS}}
+        Topics: {{TOPICS}}
+
+
