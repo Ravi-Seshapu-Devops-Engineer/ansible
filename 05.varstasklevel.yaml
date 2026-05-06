@@ -1,0 +1,16 @@
+- name: task level variables
+  hosts: local
+  connection: local
+  vars:
+  - name: play level variables
+    course: DEVOPS with AWS
+    user: Ravi
+    Trainer: Joindevops
+  - tasks:
+    name: printing task level variables
+    vars: 
+      course: Aws
+      user: Shankar
+      Trainer: Ravi
+    ansible.builtin.debug:
+      msg: Course is {{course}} taken by {{user}} and trained by {{Trainer}}
