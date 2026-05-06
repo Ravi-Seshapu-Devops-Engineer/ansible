@@ -1,0 +1,8 @@
+- name: variables from args
+  hosts: local
+  connection: local
+  
+  tasks:
+  - name: giving variables from argumets
+    ansible.builtin.debug:
+      msg: "Hi {{name}} are you learning devops"
