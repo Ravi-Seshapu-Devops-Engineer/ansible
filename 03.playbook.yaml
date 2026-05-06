@@ -2,8 +2,8 @@
   hosts: web
   become: true
   tasks:
-    - name: installing nginx
-      ansible.builditin.package:
-        - name: nginx
-          state: present
+  - name: installing nginx
+    ansible.builditin.package:
+      name: nginx
+      state: present
 
