@@ -3,10 +3,10 @@
   connection: local
   vars:
     topics: linux, shell, ANsible, terraform
-  tagslist:
-    name: Ravi
-    project: roboshop
-    component: ansible
+    tagslist:
+      name: Ravi
+      project: roboshop
+      component: ansible
   
   tasks:
   - name: Greeting
