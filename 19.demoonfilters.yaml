@@ -3,6 +3,7 @@
   connection: local
   vars:
     topics: linux, shell, ANsible, terraform
+    course: Devops with Aws
     tagsmap:
       name: Ravi
       project: roboshop
@@ -41,3 +42,7 @@
   - name: converting list to dict
     ansible.builtin.debug:
       msg: "{{ tagslist | items2dict }}"
+
+  - name: Converting to lower case
+    ansible.builtin.debug:
+      msg: "{{ course | lower }}"
