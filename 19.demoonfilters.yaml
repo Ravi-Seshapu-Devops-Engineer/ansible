@@ -4,6 +4,7 @@
   vars:
     topics: linux, shell, ANsible, terraform
     course: Devops with Aws
+    myIp: 123.43.53.194
     tagsmap:
       name: Ravi
       project: roboshop
@@ -50,3 +51,7 @@
   - name: Converting to Upper case
     ansible.builtin.debug:
       msg: "{{ course | upper }}"
+
+  - name: Identifying IP
+    ansible.builtin.debug:
+      msg: "{{ myIp | ansible.utils.ipv4 }}"
